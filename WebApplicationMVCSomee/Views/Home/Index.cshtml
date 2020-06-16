@@ -2,12 +2,22 @@
     ViewBag.Title = "Home Page";
 }
 
-    <div class="jumbotron">
-        <h1>Rượu bắc nhà nấu</h1>
-        <div>
-            <img src="~/Content/Images/mickey3.jpg" />
-        </div>
-    </div>
+<!--All Required REACTJS Lib-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.7.1/remarkable.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.0/prop-types.js"></script>
+
+<div id="myContainer">
+    
+
+</div>
+<div class="jumbotron">
+    <h1>Rượu bắc nhà nấu</h1>
+    @*<div>
+        <img src="~/Content/Images/mickey3.jpg" />
+    </div>*@
+</div>
 
 <div class="row">
     <div class="col-md-4">
@@ -30,3 +40,8 @@
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
 </div>
+
+@*@Html.React("Sample", new { initialComments = Model.Comments, page = Model.Page })
+
+    <script src="~/Content/Sample.jsx"></script>
+    @Html.ReactInitJavaScript();*@

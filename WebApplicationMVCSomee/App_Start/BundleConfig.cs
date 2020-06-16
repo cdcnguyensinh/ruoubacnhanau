@@ -1,5 +1,6 @@
 ﻿using System.Web;
 using System.Web.Optimization;
+using System.Web.Optimization.React;
 
 namespace WebApplicationMVCSomee
 {
@@ -25,6 +26,8 @@ namespace WebApplicationMVCSomee
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new BabelBundle("~/bundles/reactjs").Include("~/Content/ReactJs/FirstReactApp.jsx"));
         }
     }
 }
